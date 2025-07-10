@@ -34,3 +34,5 @@ resource "google_container_node_pool" "this" {
   }
 }
 
+# Data source to retrieve the current Google client configuration
+data "google_client_config" "current" {}
