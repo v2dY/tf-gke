@@ -1,39 +1,39 @@
-variable "GOOGLE_PROJECT" {
+variable "google_project" {
   type        = string
   description = "GCP project name"
 }
 
-variable "GOOGLE_REGION" {
+variable "google_region" {
   type        = string
   default     = "us-central1"
   description = "GCP region to use"
 }
 
-variable "GOOGLE_ZONE" {
+variable "gke_location" {
   type        = string
   default     = "us-central1-c"
-  description = "GCP zone to use"
+  description = "GKE location"
 }
 
-variable "GKE_MACHINE_TYPE" {
+variable "gke_machine_type" {
   type        = string
   default     = "e2-medium"
   description = "Machine type"
 }
 
-variable "GKE_NUM_NODES" {
+variable "gke_num_nodes" {
   type        = number
   default     = 2
   description = "GKE nodes number"
 }
 
-variable "GKE_CLUSTER_NAME" {
+variable "gke_cluster_name" {
   type        = string
   default     = "main"
   description = "GKE cluster name"
 }
 
-variable "GKE_POOL_NAME" {
+variable "gke_pool_name" {
   type        = string
   default     = "main"
   description = "GKE pool name"
